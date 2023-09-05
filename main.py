@@ -11,9 +11,9 @@ SCREEN = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))
 GROUNDY = SCREENHEIGHT * 0.8
 GAME_SPRITES = {}
 GAME_SOUNDS = {}
-PLAYER = 'resources/SPRITES/kittysmall.png'
-BACKGROUND = 'resources/SPRITES/bg.jpeg'
-PIPE = 'resources/SPRITES/pipe.png'
+PLAYER = 'resources/sprites/kittysmall.png'
+BACKGROUND = 'resources/sprites/bg.jpeg'
+PIPE = 'resources/sprites/pipe.png'
 
 
 # Define the welcomeScreen function
@@ -104,11 +104,11 @@ if __name__ == "__main__":
     pygame.image.load(PIPE).convert_alpha(),
     180), pygame.image.load(PIPE).convert_alpha())
 
-  GAME_SOUNDS['die'] = pygame.mixer.Sound('resources/AUDIO/die.wav')
-  GAME_SOUNDS['hit'] = pygame.mixer.Sound('resources/AUDIO/hit.wav')
-  GAME_SOUNDS['point'] = pygame.mixer.Sound('resources/AUDIO/point.wav')
-  GAME_SOUNDS['swoosh'] = pygame.mixer.Sound('resources/AUDIO/swoosh.wav')
-  GAME_SOUNDS['wing'] = pygame.mixer.Sound('resources/AUDIO/wing.wav')
+  GAME_SOUNDS['die'] = pygame.mixer.Sound('resources/audio/die.wav')
+  GAME_SOUNDS['hit'] = pygame.mixer.Sound('resources/audio/hit.wav')
+  GAME_SOUNDS['point'] = pygame.mixer.Sound('resources/audio/point.wav')
+  GAME_SOUNDS['swoosh'] = pygame.mixer.Sound('resources/audio/swoosh.wav')
+  GAME_SOUNDS['wing'] = pygame.mixer.Sound('resources/audio/wing.wav')
 
   while True:
     welcomeScreen()
